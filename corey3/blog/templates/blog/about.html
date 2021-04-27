@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  {% for data in contents %}
+    <h1>{{ data.author }}</h1>
+    <p>{{ data.title }}</p>
+  {% endfor %}
+{% endblock %}
